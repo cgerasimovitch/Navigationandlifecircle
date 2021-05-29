@@ -7,11 +7,17 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+struct Post {
+    var title: String
+}
 
+class PostViewController: UIViewController {
+    var readyTitle = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = readyTitle
+        print(self.title)
         // Do any additional setup after loading the view.
     }
     

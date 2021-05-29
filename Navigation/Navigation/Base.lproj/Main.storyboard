@@ -28,7 +28,7 @@
         <!--FeedViewController-->
         <scene sceneID="scu-y4-lPM">
             <objects>
-                <viewController id="w1i-Jh-pVY" customClass="FeedViewController" sceneMemberID="viewController">
+                <viewController id="w1i-Jh-pVY" customClass="FeedViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="69B-35-7Oc" customClass="FeedViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Read post"/>
                                 <connections>
-                                    <segue destination="M5p-ad-KxP" kind="show" id="PHc-cR-fKg"/>
+                                    <segue destination="M5p-ad-KxP" kind="show" identifier="postView" id="PHc-cR-fKg"/>
                                 </connections>
                             </button>
                         </subviews>
