@@ -61,7 +61,13 @@
                         <viewLayoutGuide key="safeArea" id="vdN-dI-J3J"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NHl-HP-TUo"/>
+                    <navigationItem key="navigationItem" id="NHl-HP-TUo">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="S7B-4B-7wO">
+                            <connections>
+                                <segue destination="aB6-I6-9qi" kind="presentation" id="zmV-pY-53d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYj-c4-42R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +123,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etx-Tw-Nof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-691" y="133"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="fLw-60-QFT">
+            <objects>
+                <viewController id="aB6-I6-9qi" customClass="InfoViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8sQ-Cc-ClQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gf-nV-Tjq">
+                                <rect key="frame" x="177" y="401" width="60" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T6I-av-FU1"/>
+                                    <constraint firstAttribute="width" constant="60" id="wZF-Z3-A9Z"/>
+                                </constraints>
+                                <state key="normal" title="Alert!"/>
+                                <connections>
+                                    <action selector="alertAction:" destination="aB6-I6-9qi" eventType="touchUpInside" id="ASN-iV-TAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LR4-lq-jhL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8gf-nV-Tjq" firstAttribute="centerX" secondItem="8sQ-Cc-ClQ" secondAttribute="centerX" id="h1a-iS-X1J"/>
+                            <constraint firstItem="8gf-nV-Tjq" firstAttribute="centerY" secondItem="8sQ-Cc-ClQ" secondAttribute="centerY" id="zA3-rA-aK2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddE-rA-Lkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3218.840579710145" y="124.55357142857142"/>
         </scene>
     </scenes>
     <resources>
