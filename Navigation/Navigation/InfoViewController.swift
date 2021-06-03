@@ -21,7 +21,7 @@ class InfoViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Принял", style: .cancel, handler: { _ in
             print("Ахушки")
         }))
-        self.present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
     
 
